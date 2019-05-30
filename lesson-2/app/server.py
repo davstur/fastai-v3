@@ -11,7 +11,7 @@ from fastai.vision import *
 model_file_url = 'https://drive.google.com/uc?authuser=0&id=1XSaAgITknXAgr7QdcjQpZ9THZrFQb3hf&export=download'
 model_file_name = 'model'
 classes = ['bern', 'zurich']
-path = Path(__file__).parent
+path = Path(__file__).parent 
 
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
